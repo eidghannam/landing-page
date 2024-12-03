@@ -4,6 +4,10 @@
 
 This project creates an interactive landing page using JavaScript. The page dynamically builds a navigation menu, highlights sections in view, enables smooth scrolling, and features a responsive design.
 
+## Demo
+
+You can view a live demo of the project [here](https://eidghannam.github.io./landing-page/).
+
 ## Features
 
 - **Dynamic Navigation Bar:** The navigation menu is built dynamically based on the sections in the page.
