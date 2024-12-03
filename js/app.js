@@ -39,9 +39,20 @@ document.addEventListener("scroll", makeActive);
 /////////////////////////////////////////////////////////
 // Enable Smooth Scrolling to Sections
 // Function to enable smooth scrolling when clicking navigation links
+
 navbarList.addEventListener("click", (event) => {
   event.preventDefault();
+
   if (event.target.nodeName === "A") {
+    // Remove active-link class from all links
+    document.querySelectorAll(".menu__link").forEach((link) => {
+      link.classList.remove("active-link");
+    });
+
+    // Add active-link class to the clicked link
+    event.target.classList.add("active-link");
+
+    // Smooth scroll to the clicked section
     document.querySelector(event.target.getAttribute("href")).scrollIntoView({
       behavior: "smooth",
     });

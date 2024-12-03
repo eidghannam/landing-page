@@ -83,6 +83,12 @@ section {
   color: #000;
 }
 
+/* Active Link */
+.navbar__menu .menu__link.active-link {
+  color: red;
+  font-weight: bold;
+}
+
 .navbar__menu .menu__link:hover {
   background: #333;
   color: #fff;
